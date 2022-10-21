@@ -1,14 +1,20 @@
 import './style.css';
-import { addNameScroe } from './modules/newScore.js';
-import clearInput from './modules/clearInput.js';
-import refreshPage from './modules/refresh.js';
+import clearInput, { score, namVal } from './modules/clearInput.js';
+import { getScores, addScore, scoreDisplay } from './modules/api.js';
 
 const form = document.querySelector('.form');
+const refresh = document.querySelector('.refresh');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  addNameScroe();
+  const scores = score.value;
+  const nameVal = namVal.value;
+  scoreDisplay.innerHTML += `<p>${nameVal}: ${scores} </p>`;
+  addScore(nameVal, scores);
   clearInput();
 });
-refreshPage();
+
+refresh.addEventListener('click', () => {
+  getScores();
+});
