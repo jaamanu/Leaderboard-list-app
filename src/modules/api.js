@@ -2,12 +2,16 @@ import Scores from './scores.js';
 
 const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 const url = `${apiURL}games/`;
-const ID = 'shKHUGhdjshfKHUT7kdskfsk';
+const ID = 'dfhjhdHhhuGGJGCjbjgugjYUuu';
 const scoreDisplay = document.querySelector('.scores_name');
 
 const display = (gameData) => {
   scoreDisplay.innerHTML = '';
-  const displayScores = gameData.map((list) => `<p>${list.user}: ${list.score} </p>`).join('');
+  const displayScores = gameData.map((list) => `<div>
+                                                <p>Name: ${list.user}</p> <br> 
+                                                <p>Score: ${list.score} </p>
+                                                </div>`).join('');
+
   scoreDisplay.innerHTML = displayScores;
 };
 
