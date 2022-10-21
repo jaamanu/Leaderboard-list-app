@@ -11,7 +11,7 @@ This project was also created to test my knowledge on webpack in general and API
 - Major languages: HTML, CSS & Javascript
 - Technologies used: Linters, Git and Github, webpack.
 
-## Live Demo
+## Live Demo[]
 
 ### TBD
 
@@ -30,7 +30,7 @@ To get a local copy up and running follow these simple example steps.
 2. Clone this repo in your terminal or git bash using the command
 
    ```
-   git clone https://github.com/kennyegun24/LeaderBoard.git
+   git clone [https://github.com/kennyegun24/LeaderBoard.git](https://github.com/jaamanu/Leaderboard-list-app.git)
    ```
 
 3. run `npm install ` to install all the necessary dependencies including the linters
