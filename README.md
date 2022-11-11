@@ -11,7 +11,7 @@ This project was also created to test my knowledge on webpack in general and API
 - Major languages: HTML, CSS & Javascript
 - Technologies used: Linters, Git and Github, webpack.
 
-## Live Demo[]
+## Live Demo[https://jaamanu.github.io/Leaderboard-list-app/dist/]
 
 ### TBD
 
